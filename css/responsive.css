@@ -1,0 +1,41 @@
+@media (min-width: 320px) and (max-width: 360px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        grid-template-areas: "header" "hero" "features" "contact" "footer";
+        grid-template-rows: repeat(5 auto);
+        width: 320px;
+    }
+
+    header {
+        padding: 0px;
+
+    }
+
+    header>div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header>div>nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero>img {
+        object-fit: fill;
+        width: 320px;
+        height: auto;
+    }
+
+    .contact>form {
+        width: 200px;
+        margin-top: auto;
+        margin-left: auto;
+        gap: 5px;
+    }
+
+}

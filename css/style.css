@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header" "hero features" "hero contact" "footer footer";
+    grid-template-rows: repeat (4 auto);
+    grid-template-columns: 1fr 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header>img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+header>div>nav>a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header>div>nav>a:hover {
+    font-size: 14px;
+}
+
+header>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    grid-area: hero;
+    background-color: black;
+    color: white;
+}
+
+.hero>img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.features{
+    grid-area: features;
+    padding-left: 20px;
+}
+
+.contact {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.contact>form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+.contact>input {
+    border: 1px;
+}
+
+.contact>form>textarea {
+    min-height: 32px;
+}
+
+.contact>form>button {
+    width: 100px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+    margin-bottom: 10px;
+
+}
+
+.text{
+    padding-left: 10px;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
