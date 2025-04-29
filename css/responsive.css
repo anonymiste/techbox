@@ -27,12 +27,12 @@
 
     .hero>img {
         object-fit: fill;
-        width: 320px;
+        width: 360px;
         height: auto;
     }
 
     .contact>form {
-        width: 200px;
+        width: auto;
         margin-top: auto;
         margin-left: auto;
         gap: 5px;
