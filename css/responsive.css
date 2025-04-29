@@ -7,7 +7,7 @@
     body {
         grid-template-areas: "header" "hero" "features" "contact" "footer";
         grid-template-rows: repeat(5 auto);
-        width: 360px;
+        width: 320px;
     }
 
     header {
@@ -27,12 +27,12 @@
 
     .hero>img {
         object-fit: fill;
-        width: 320px;
+        width: 360px;
         height: auto;
     }
 
     .contact>form {
-        width: 320px;
+        width: 200px;
         margin-top: auto;
         margin-left: auto;
         gap: 5px;
