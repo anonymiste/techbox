@@ -7,7 +7,7 @@
     body {
         grid-template-areas: "header" "hero" "features" "contact" "footer";
         grid-template-rows: repeat(5 auto);
-        width: 320px;
+        width: auto;
     }
 
     header {
